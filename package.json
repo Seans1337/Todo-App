@@ -1,0 +1,47 @@
+{
+  "name": "react-todo-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:4500",
+  "dependencies": {
+    "json-server": "^0.15.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.3",
+    "styled-components": "^4.3.2",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "heroku-postbuild": "npm run build",
+    "test": "react-scripts test",
+    "server": "json-server --watch db.json --port 4500",
+    "eject": "react-scripts eject",
+    "prod": "node server.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "install-peers": "^1.0.3"
+  },
+  "engines": {
+    "node": "12.8.0",
+    "npm": "6.10.3"
+  }
+}
